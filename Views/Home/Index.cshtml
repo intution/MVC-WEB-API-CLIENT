@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class="row">
+        @foreach (var repo in ViewBag.Repositories)
+        {
+            <div class="col-md-4 text-start mb-5">
+                <li>Name: @repo.Name</li>
+                <li>Homepage: @repo.Homepage</li>
+                <li>GitHub: @repo.GitHubHomeUrl</li>
+                <li>Description: @repo.Description</li>
+                <li>Watchers: @repo.Watchers</li>
+                <li>LastPush: @repo.LastPush</li>
+
+
+
+
+            </div>
+
+        }
+    </div>
+
+</div>
